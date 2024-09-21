@@ -66,7 +66,7 @@
               </ul>
             </li>
           </ul>
-          <div style="position: relative">
+          <div id="carrito">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,27 +81,8 @@
                 />
               </svg>
             </div>
-            <div
-              class="bg-body-tertiary"
-              style="
-                position: absolute;
-                bottom: 10px;
-                right: -10px;
-                z-index: 2;
-                background-color: red !important;
-                border-radius: 999px;
-                color: white;
-                padding: 1px;
-                font-size: 12px;
-                aspect-ratio: 1 / 1;
-                width: 1.3rem;
-                height: 1.3rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
-              <span id="carrito">0</span>
+            <div class="bg-body-tertiary">
+              <span>0</span>
             </div>
           </div>
         </div>
@@ -109,7 +90,7 @@
     </nav>
 
     <main class="container-sm">
-      <article style="width: 100%;">
+      <article style="width: 100%">
         <header
           style="text-align: center; color: white; background-color: #67239b"
           class="fw-bolder"
@@ -205,9 +186,7 @@
             <a href="https://www.facebook.com/organaperu"
               ><img src="assets/imgs/icons8-facebook-nuevo-48.png" alt="Facebook"
             /></a>
-            <a href="index.html"
-              ><img src="assets/imgs/icons8-chrome-48.png" alt="Website"
-            /></a>
+            <a href="index.html"><img src="assets/imgs/icons8-chrome-48.png" alt="Website" /></a>
             <a href="https://w.app/r6OpWn"
               ><img src="assets/imgs/icons8-whatsapp-48.png" alt="WhatsApp"
             /></a>
@@ -216,56 +195,10 @@
       </div>
     </footer>
 
-    <div
-      id="modal_carrito"
-      style="
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        z-index: 10;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(5px);
-      "
-    >
-      <div
-        style="
-          background-color: white;
-          width: 100%;
-          height: 100%;
-          max-width: 700px;
-          max-height: 700px;
-          border-radius: 12px;
-          overflow: hidden;
-          padding: 2rem;
-        "
-      >
-        <span
-          style="
-            color: green;
-            font-weight: 700;
-            font-size: 2rem;
-            text-align: center;
-            display: block;
-            margin-bottom: 2rem;
-          "
-          >Carrito de compras
-        </span>
-        <ul style="height: 500px; overflow-y: auto">
-          <li style="display: flex; gap: 2rem">
-            <div
-              style="box-shadow: 2px 2px 16px 0px #00000029; border-radius: 10px; overflow: hidden"
-            >
-              <img src="assets/imgs/PureOrganicoArandano.png" alt="" style="max-width: 8rem" />
-            </div>
-            <div>
-              <span style="font-size: 20px; font-weight: 700">Nombre del producto</span>
-              <input type="number" min="1" value="1" class="form-control" style="width: 5rem" />
-            </div>
-          </li>
-        </ul>
+    <div id="modal_carrito">
+      <div>
+        <span>Carrito de compras </span>
+        <ul style="height: 500px; overflow-y: auto"></ul>
         <div style="display: flex; justify-content: center">
           <a href="CompraExito.html" class="btn btn-success">Comprar los productos del carrito</a>
         </div>
