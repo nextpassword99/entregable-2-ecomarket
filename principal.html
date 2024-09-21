@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+  <head>
+    <title>EcoMarket</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script.js"></script>
+  </head>
+
+  <body style="align-items: center; background-color: #f9e79f; position: relative">
+    <header style="text-align: center; color: black; background-color: #f1c40f" class="fw-bolder">
+      ENVÍOS A TODA LIMA Y PROVINCIA - COMPRAS MAYORES DE S/. 39,90
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div style="font-family: cursive" class="container-fluid">
+        <a class="navbar-brand" href="principal.html">Eco Market</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="principal.html"
+                style="font-family: cursive"
+                >Principal</a
+              >
+            </li>
+            <li style="font-family: cursive" class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Productos</a
+              >
+              <ul style="font-family: cursive" class="dropdown-menu">
+                <li><a class="dropdown-item" href="Abarrotes.html">Abarrotes</a></li>
+                <li><a class="dropdown-item" href="Frescos.html">Frescos</a></li>
+                <li><a class="dropdown-item" href="HigieneBelleza.html">Higiene y Belleza</a></li>
+                <li><a class="dropdown-item" href="VitaminasSuplementos.html">Suplementos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div style="position: relative">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-cart3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-body-tertiary"
+              style="
+                position: absolute;
+                bottom: 10px;
+                right: -10px;
+                z-index: 2;
+                background-color: red !important;
+                border-radius: 999px;
+                color: white;
+                padding: 1px;
+                font-size: 12px;
+                aspect-ratio: 1 / 1;
+                width: 1.3rem;
+                height: 1.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <span id="carrito">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="row">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/imgs/fondo3.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/fondo2.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imgs/fondo1.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div style="width: 100%">
+        <span
+          style="text-align: center; color: black; background-color: #f1c40f; display: block"
+          class="fw-bolder"
+          >Ofertas HOT!!!
+        </span>
+      </div>
+      <br />
+      <div class="container-sm container_productos" class="row" class="table-responsive">
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/PureOrganicoArandano.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Pure Orgánico Arándanos</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/PureOrganicoMango.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Pure Orgánico Mango</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/PureOrganicoPlatano.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Pure Orgánico Plátano</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/PureOrganicoManzana.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Pure Orgánico Manzana</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(4, 2fr);
+          grid-gap: 20px;
+          overflow-x: auto;
+        "
+        class="container-sm"
+        class="row"
+        class="table-responsive"
+      >
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/PapasOrganicasMixtas.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Papas Nativas Mixtas</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/MacaGelatinizada.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Maca Gelatinizada</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/PapasNativasRojas.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Papas Nativas Rojas</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card _producto" style="width: 15rem">
+          <img src="assets/imgs/PapasNativasAzules.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div>
+              <h5 class="card-title">Papas Nativas Azules</h5>
+              <p class="card-text">Producto 100% calidad.</p>
+            </div>
+            <button class="btn btn-success">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <button
+        class="btn btn-outline-dark"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        Contáctenos
+      </button>
+      <br />&COPY;2024 EcoMarket. Todos los Derechos Reservados.
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <header
+              style="text-align: center; color: white; background-color: #d4e809"
+              class="fw-bolder"
+            >
+              Contacto
+            </header>
+            <br />
+          </div>
+          <div id="hola" class="container row-cols-1">
+            <div>
+              <p style="text-align: center">
+                Correo: contacto@ecomarket.pe<br />
+                Teléfono: +51 977946928<br />
+                Dirección: Perú-Ancash-Nvo Chimbote<br /><br />
+                Nuestras redes sociales:<br />
+                <a href="https://www.instagram.com/organaperu/?hl=es"
+                  ><img src="assets/imgs/icons8-instagram-48.png"
+                /></a>
+                <a href="https://www.facebook.com/organaperu"
+                  ><img src="assets/imgs/icons8-facebook-nuevo-48.png"
+                /></a>
+                <a href="principal.html"><img src="assets/imgs/icons8-chrome-48.png" /></a>
+                <a href="https://w.app/r6OpWn"><img src="assets/imgs/icons8-whatsapp-48.png" /></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="modal_carrito"
+      style="
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+      "
+    >
+      <div
+        style="
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          max-width: 700px;
+          max-height: 700px;
+          border-radius: 12px;
+          overflow: hidden;
+          padding: 2rem;
+        "
+      >
+        <span
+          style="
+            color: green;
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: center;
+            display: block;
+            margin-bottom: 2rem;
+          "
+          >Carrito de compras
+        </span>
+        <ul style="height: 500px; overflow-y: auto">
+          <li style="display: flex; gap: 2rem">
+            <div
+              style="box-shadow: 2px 2px 16px 0px #00000029; border-radius: 10px; overflow: hidden"
+            >
+              <img src="assets/imgs/PureOrganicoArandano.png" alt="" style="max-width: 8rem" />
+            </div>
+            <div>
+              <span style="font-size: 20px; font-weight: 700">Nombre del producto</span>
+              <input type="number" min="1" value="1" class="form-control" style="width: 5rem" />
+            </div>
+          </li>
+        </ul>
+        <div style="display: flex; justify-content: center;">
+          <a href="CompraExito.html" class="btn btn-success"
+            >Comprar los productos del carrito</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
