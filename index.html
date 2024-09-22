@@ -144,10 +144,10 @@
       <!-- aquí la pantalla -->
       <section class="_first-section">
         <div>
-          <h1>Los mejores productos</h1>
+          <h1 class="mb-3 text-center text-uppercase fw-bolder">Los mejores productos</h1>
         </div>
         <div>
-          <a href="CompraExito.html" class="item-card">
+          <div class="item-card">
             <div>
               <img
                 src="https://img.freepik.com/fotos-premium/botellas-cosmeticos-naturales-cuidado-piel-productos-fondo-vertical-planta-verde-espacio-copiar-belleza-cuidado-piel-producto-organico-base-hierbas-hidratacion-profunda-o-calmante-ai-contenido-generativo_70898-10769.jpg?w=360"
@@ -155,10 +155,10 @@
               />
             </div>
             <div>
-              <h3>Edición de otoños</h3>
+              <h3>Edición de otoño</h3>
             </div>
-          </a>
-          <a href="CompraExito.html" class="item-card">
+          </div>
+          <div class="item-card">
             <div>
               <img
                 src="https://img.freepik.com/fotos-premium/productos-cosmeticos-naturales-cuidado-piel-hojas-plantas-tropicales-verdes-fondo-negro-vertical-espacio-copiar-belleza-cuidado-piel-producto-maquillaje-organico-base-hierbas-contenido-generativo-ai_70898-9963.jpg"
@@ -166,10 +166,10 @@
               />
             </div>
             <div>
-              <h3>Los mejores productos</h3>
+              <h3>Todo al natural</h3>
             </div>
-          </a>
-          <a href="CompraExito.html" class="item-card">
+          </div>
+          <div class="item-card">
             <div>
               <img
                 src="https://img.freepik.com/fotos-premium/cosmeticos-naturales-cuidado-piel-producto-frasco-crema-fondo-vertical-planta-verde-espacio-copiar-belleza-cuidado-piel-producto-organico-base-hierbas-hidratacion-profunda-o-muestra-calmante-ai-contenido-generativo_70898-10289.jpg"
@@ -177,9 +177,9 @@
               />
             </div>
             <div>
-              <h3>Hola mundo</h3>
+              <h3>Cuidado de la piel</h3>
             </div>
-          </a>
+          </div>
         </div>
       </section>
 
@@ -317,6 +317,40 @@
         </div>
         <div class="offcanvas-body">
           <div>
+            <form class="mb-5">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Ingresa tu nombre"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo"
+                  placeholder="Ingresa tu correo"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="opinion" class="form-label">Tu opinión:</label>
+                <textarea
+                  class="form-control"
+                  id="opinion"
+                  rows="4"
+                  placeholder="Escribe tu opinión aquí"
+                ></textarea>
+              </div>
+
+              <button type="reset" class="btn btn-success">Enviar</button>
+            </form>
+
             <header
               style="text-align: center; color: white; background-color: #d4e809"
               class="fw-bolder"
