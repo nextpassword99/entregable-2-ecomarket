@@ -118,6 +118,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-x: auto;
+  max-width: 1228px;
 }
 .item-card > div:nth-child(1) {
   border-radius: 18px;
@@ -130,13 +132,13 @@ footer {
   transition: all;
   transition-duration: 500ms;
 }
+.item-card h3 {
+  text-align: center;
+}
 .item-card:hover img {
   transform: scale(1.2);
 }
-.item-card:hover h3 {
-  text-decoration: underline;
-  /* color: red; */
-}
+
 ._first-section > div:nth-child(2) {
   display: flex;
   gap: 2rem;
@@ -146,7 +148,7 @@ footer {
     width: 20rem;
     object-fit: cover;
   }
-  a {
+  div.card {
     text-decoration: none;
     color: #000;
     font-weight: bold;
